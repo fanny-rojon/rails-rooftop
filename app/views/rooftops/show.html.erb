@@ -7,10 +7,10 @@
 
 <div class="container">
   <div class="rooftop-info">
-    <h2><%= @rooftop.name %></h2>
-    <p><%= @rooftop.description %></p>
-    <p><%= @rooftop.address %></p>
-    <p><%= @rooftop.price %>€</p>
+    <h2 class="name"><%= @rooftop.name %></h2>
+    <p class="description"><%= @rooftop.description %></p>
+    <p class="address"><%= @rooftop.address %></p>
+    <p class="price"><%= @rooftop.price %>€</p>
   </div>
   <%= link_to "Delete", rooftop_path(@rooftop),
         method: :delete,
