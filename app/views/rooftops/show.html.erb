@@ -6,12 +6,15 @@
 </div>
 
 <div class="container">
-  <h2><%= @rooftop.name %></h2>
-  <p><%= @rooftop.description %></p>
-  <p><%= @rooftop.address %></p>
-  <p><%= @rooftop.price %>€</p>
+  <div class="rooftop-info">
+    <h2><%= @rooftop.name %></h2>
+    <p><%= @rooftop.description %></p>
+    <p><%= @rooftop.address %></p>
+    <p><%= @rooftop.price %>€</p>
+  </div>
   <%= link_to "Delete", rooftop_path(@rooftop),
         method: :delete,
+        class: "btn btn-danger",
         data: { confirm: "Are you sure?" } %>
 </div>
 
