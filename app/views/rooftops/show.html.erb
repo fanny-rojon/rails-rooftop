@@ -1,0 +1,16 @@
+<% content_for(:title) do %>
+  <%= @rooftop.name %>
+<% end %>
+
+<div class="container">
+
+<div class="show-banner">
+<h2><%= @rooftop.name %></h2>
+<p><%= @rooftop.description %></p>
+
+</div>
+
+<%= link_to "Delete", rooftop_path(@rooftop),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+</div>
