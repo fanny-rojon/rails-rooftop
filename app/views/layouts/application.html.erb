@@ -11,10 +11,22 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
+    <% if controller.controller_name == "pages" && controller.action_name == "home" %>
+      <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0)), url(https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);">
+        <%= render "shared/navbar" %>
+        <div class="container homepage">
+          <h1>Rent a rooftop, terrace or patio anywhere</h1>
+          <p><span id="banner-typed-text"></span></p>
+          <%#= link_to "Find a rooftop!", rooftops_path, {class: "btn btn-primary"} %>
+        </div>
+      </div>
+    <% else %>
+      <%= render "shared/navbar" %>
+    <% end %>
 
+    <%= render "shared/flashes" %>
+    <%= yield %>
+    <%#= render "shared/footer" %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
