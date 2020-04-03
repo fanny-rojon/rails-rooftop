@@ -1,0 +1,15 @@
+<div class="col-sm-4">
+<%#= link_to rooftop_path(rooftop), {class: "show-link"} do %>
+  <div class="card-rooftop">
+    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80" />
+    <div class="card-rooftop-infos">
+      <div>
+        <h2><%= rooftop.name %></h2>
+        <p><%= rooftop.description %></p>
+      </div>
+      <h2 class="card-rooftop-pricing"><%= rooftop.price %>€</h2>
+      <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-rooftop-user avatar-bordered" />
+    </div>
+  </div>
+<%# end %>
+</div>

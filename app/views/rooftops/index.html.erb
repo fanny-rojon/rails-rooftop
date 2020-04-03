@@ -1,0 +1,14 @@
+<% content_for(:title) do %>
+  All rooftops
+<% end %>
+
+<div class="container">
+  <div class="row rooftop-cards">
+    <%= render @rooftops  %>
+    <%# @rooftops.each do |r| %>
+      <!-- <div class="col-sm-4"> -->
+        <%#= render "card", rooftop: r %>
+      <!-- </div> -->
+    <%# end %>
+  </div>
+</div>
