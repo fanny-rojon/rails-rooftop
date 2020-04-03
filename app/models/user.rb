@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :owned_rooftops, foreign_key: :owner_id,
-                            class_name: “Rooftop”,
+                            class_name: :rooftop,
                             dependent: :destroy
 end
