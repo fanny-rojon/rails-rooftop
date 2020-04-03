@@ -1,0 +1,26 @@
+.btn-primary {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: $turquoise;
+  transition: background 0.3s ease;
+  &:hover {
+  background: $dark-turquoise;
+  color: white;
+  border-color: $dark-turquoise;
+  }
+}
+
+.btn-ghost {
+  color: $dark-gray;
+  // border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  &:hover {
+  opacity: 1;
+  color: $dark-turquoise;
+  }
+}
