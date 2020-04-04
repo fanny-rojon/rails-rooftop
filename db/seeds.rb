@@ -7,7 +7,7 @@ puts "Creating Users..."
 fanny = User.create!(email: "fanny@gmail.com", password: "password", first_name: "Fanny", last_name: "Rojon")
 
 puts "Creating Rooftops..."
-5.times do
+6.times do
   Rooftop.create!(
     owner: fanny,
     address: Faker::Address.full_address,
