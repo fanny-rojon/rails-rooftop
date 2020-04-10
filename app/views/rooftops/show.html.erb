@@ -2,18 +2,6 @@
   <%= @rooftop.name %>
 <% end %>
 
-<div class="show-banner">
-</div>
-
-<div class="container">
-  <div class="rooftop-info">
-    <h2 class="name"><%= @rooftop.name %></h2>
-    <p class="description"><%= @rooftop.description %></p>
-    <p class="address"><%= @rooftop.address %></p>
-    <p class="price"><%= @rooftop.price %>€</p>
-  </div>
-</div>
-
 <div class="show-header">
   <ul id="grid">
     <li id="main"><%=image_tag("apt_0")%></li>
@@ -33,8 +21,8 @@
   <div class="apt-info">
     <div class="apt-header">
       <div class="apt-title">
-        <h1>Cozy Studio with Private Patio</h1>
-        <p>San Francisco</p>
+        <h1><%= @rooftop.name %></h1>
+        <p><%= @rooftop.address %></p>
       </div>
       <div class="owner">
         <img src="https://avatars2.githubusercontent.com/u/54022229?v=4" alt="" class="avatar">
@@ -60,7 +48,7 @@
     </div>
     <hr>
     <div class="apt-description">
-      <p>A double pairs of French doors lead directly from the cosy bedroom to a private patio. Sit back and relax in the breeze with a book and a cold beverage. Fire up the barbecue or take a short stroll and admire the view.</p>
+      <p><%= @rooftop.description %></p>
     </div>
     <hr>
     <div class="apt-amenities">
@@ -80,11 +68,11 @@
     </div>
     <%= link_to "Delete", rooftop_path(@rooftop),
         method: :delete,
-        class: "btn btn-danger",
+        class: "btn btn-secondary",
         data: { confirm: "Are you sure?" } %>
   </div>
   <div class="apt-booking">
-    <div><span class="price"><s>40€</s><strong> 32€ </strong></span><span class="text-small">/night</span></div>
+    <div><span class="price"><s><%= (@rooftop.price * 1.20).round %>€</s><strong> <%= @rooftop.price.round %>€ </strong></span><span class="text-small">/night</span></div>
     <div><i class="fas fa-star"></i> <span class="text-small">4,75</span> <span class="text-small light-text">(620 evaluaciones)</span></div>
     <hr>
 
