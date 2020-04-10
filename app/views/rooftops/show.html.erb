@@ -12,9 +12,123 @@
     <p class="address"><%= @rooftop.address %></p>
     <p class="price"><%= @rooftop.price %>€</p>
   </div>
-  <%= link_to "Delete", rooftop_path(@rooftop),
+</div>
+
+<div class="show-header">
+  <ul id="grid">
+    <li id="main"><%=image_tag("apt_0")%></li>
+    <li><%=image_tag("apt_1")%></li>
+    <li><%=image_tag("apt_2")%></li>
+    <li id="secondary"><%=image_tag("apt_3")%></li>
+    <li><%=image_tag("apt_4")%></li>
+  </ul>
+  <div class="btn-group-social">
+    <a href="#" class="btn btn-social share"><i class="far fa-share-square"></i>  Share</a>
+    <a href="#" class="btn btn-social save"><i class="far fa-heart"></i>  Save</a>
+  </div>
+  <a href="#" class="btn btn-social photos">See photos</a>
+</div>
+
+<div class="show-container">
+  <div class="apt-info">
+    <div class="apt-header">
+      <div class="apt-title">
+        <h1>Cozy Studio with Private Patio</h1>
+        <p>San Francisco</p>
+      </div>
+      <div class="owner">
+        <img src="https://avatars2.githubusercontent.com/u/54022229?v=4" alt="" class="avatar">
+        <p>Fanny</p>
+      </div>
+    </div>
+    <div class="apt-details">
+      <div class="apt-summary">
+        <p>4 guests</p>
+        <p>House</p>
+        <p>2 beds</p>
+        <p>1 bathroom</p>
+      </div>
+      <hr>
+      <div class="details">
+        <h3><i class="fas fa-home"></i>  Entire home</h3>
+        <p>You’ll have the apartment to yourself.</p>
+        <h3><i class="fas fa-hand-sparkles"></i>  Self check-in</h3>
+        <p>Check yourself in with the lockbox.</p>
+        <h3><i class="fas fa-lock"></i>  Sparkling clean</h3>
+        <p>12 recent guests said this place was sparkling clean.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="apt-description">
+      <p>A double pairs of French doors lead directly from the cosy bedroom to a private patio. Sit back and relax in the breeze with a book and a cold beverage. Fire up the barbecue or take a short stroll and admire the view.</p>
+    </div>
+    <hr>
+    <div class="apt-amenities">
+      <p>Amenities</p>
+      <ul class="amenities">
+        <div class="amenities-1">
+          <li><i class="fas fa-wifi"></i> Wifi</li>
+          <li><i class="fas fa-utensils"></i> Kitchen</li>
+          <li><i class="fas fa-mug-hot"></i> Coffee Machine</li>
+        </div>
+        <div class="amenities-2">
+          <li><i class="fas fa-blender"></i> Blender</li>
+          <li><i class="fas fa-fan"></i> Air conditionning</li>
+          <li><i class="fas fa-wind"></i> Carbon Dioxide detector</li>
+        </div>
+      </ul>
+    </div>
+    <%= link_to "Delete", rooftop_path(@rooftop),
         method: :delete,
         class: "btn btn-danger",
         data: { confirm: "Are you sure?" } %>
-</div>
+  </div>
+  <div class="apt-booking">
+    <div><span class="price"><s>40€</s><strong> 32€ </strong></span><span class="text-small">/night</span></div>
+    <div><i class="fas fa-star"></i> <span class="text-small">4,75</span> <span class="text-small light-text">(620 evaluaciones)</span></div>
+    <hr>
+
+    <div class="select">
+      <div class="text-small">Dates</div>
+      <div class="selector light-text">20/04/2020 > 21/4/2020</div>
+        <div class="text-small">Guests</div>
+        <div class="selector light-text">2 guests   <i class="fas fa-caret-down"></i></div>
+    </div>
+
+    <div class="price_recap light-text">
+        <div>32€ x 1 noche <i class="far fa-question-circle"></i></div>
+        <div>32€</div>
+    </div>
+    <hr>
+
+    <div class="price_recap light-text">
+        <div>Gastos de limpieza <i class="far fa-question-circle"></i></div>
+        <div>20</div>
+    </div>
+    <hr>
+
+    <div class="price_recap light-text">
+        <div>Tarifia de servicio <i class="far fa-question-circle"></i></div>
+        <div>9€</div>
+    </div>
+    <hr>
+
+    <div class="price_recap">
+        <div>Total</div>
+        <div>32€</div>
+    </div>
+    <button>Make Booking</button>
+
+    <div class="disclaimer">
+      <p>You won’t be charged yet.</p>
+      <p>Certain reservations may also require a security deposit.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
 

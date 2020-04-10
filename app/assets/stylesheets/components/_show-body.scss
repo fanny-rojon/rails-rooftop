@@ -1,0 +1,171 @@
+/*INFOS*/
+
+.show-container {
+  padding: 20px 30px;
+  color: #484848;
+  display: flex;
+  justify-content: space-around;
+}
+
+.apt-info {
+  width: 50%;
+}
+
+.apt-header {
+  display: flex;
+}
+
+.apt-title {
+  padding-right: 50px;
+}
+
+.apt-title h1 {
+  font-size: 32px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.apt-title p {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.owner {
+  text-align: center;
+}
+
+.owner p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.apt-summary {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.apt-summary p {
+  font-size: 16px;
+  font-weight: lighter;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.details {
+  margin: 30px 0;
+}
+
+.details h3 {
+  font-size: 15px;
+}
+
+.details p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.details .fas {
+  font-size: 14px;
+}
+
+.apt-description {
+  margin: 30px 0;
+}
+
+.apt-amenities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.amenities {
+  display: flex;
+  justify-content: space-around;
+}
+
+.amenities li {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.amenities p {
+  font-size: 16px;
+}
+
+/*BOOKING*/
+
+.apt-booking {
+  width: 30%;
+  background-color: white;
+  border: 0.5px solid #C9DAEA;
+  padding: 30px 30px 0 30px;
+  color: #484848;
+}
+
+.apt-booking hr {
+  border: 0.5px solid #C9DAEA;
+  margin: 20px 10px;
+}
+
+.apt-booking .fa-star {
+  font-size: 12px;
+  color: #07EBE5;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.light-text {
+  font-weight: lighter;
+}
+
+.booking-title {
+  font-size: 16px;
+}
+
+.selector {
+  margin: 10px 0;
+  padding: 10px 30px;
+  border: 0.5px solid #C9DAEA;
+}
+
+.select {
+  margin-bottom: 20px;
+}
+
+.price_recap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.apt-booking button {
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  background-color: #07EBE5;
+  border-color: #07EBE5;
+  padding: 10px 22px;
+  margin: 20px 0;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.disclaimer p{
+  margin-bottom: 0;
+}
+
