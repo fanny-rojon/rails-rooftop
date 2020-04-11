@@ -1,13 +1,13 @@
 <% if controller.controller_name == "pages" && controller.action_name == "home" %>
   <div class="navbar navbar-expand-sm navbar-lewagon navbar-fixed-top transparent">
       <%= link_to root_path, class: "navbar-brand" do %>
-        <%= image_tag "logo_white.png" %>
+        <p id="logo-white"><i class="fas fa-triangle"></i> rooftop</p>
       <% end %>
   </div>
 <% else %>
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-fixed-top">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "logo_green.png" %>
+      <p id="logo-green"><i class="fas fa-triangle"></i> rooftop</p>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

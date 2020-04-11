@@ -10,10 +10,10 @@ puts "Creating Rooftops..."
 6.times do
   Rooftop.create!(
     owner: fanny,
-    address: Faker::Address.full_address,
-    name: Faker::TvShows::Friends.location,
-    description: Faker::TvShows::Friends.quote,
-    price: rand(100..250)
+    address: 'San Francisco',
+    name: 'Beautiful Apartment with a View',
+    description: 'Perfect for your parties and events',
+    price: rand(50..150).round
   )
 end
 

@@ -8,6 +8,19 @@
   flex-grow: 0;
 }
 
+#logo-white {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+#logo-green {
+  font-size: 22px;
+  color: $turquoise;
+  margin-bottom: 0;
+}
+
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }

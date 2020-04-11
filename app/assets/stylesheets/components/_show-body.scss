@@ -160,6 +160,11 @@
   border-color: #07EBE5;
   padding: 10px 22px;
   margin: 20px 0;
+  &:hover {
+  background: $dark-turquoise;
+  color: white;
+  border-color: $dark-turquoise;
+  }
 }
 
 .disclaimer {
